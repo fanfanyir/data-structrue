@@ -43,3 +43,18 @@ console.log(arr, "sort")
   // For short (length <= 22) arrays, insertion sort is used for efficiency.
   // Mozilla/Firefox : 归并排序
   // V8 ：数组长度小于等于 22 的用插入排序，其它的用快速排序
+var a = [100, 20, 40, 30, 1, 5, 9, 2, 20, 20, 30, 2];
+// 升序
+  // 插入排序
+  function InsertSortNew(a){
+    for (let i = 0; i < a.length -1; i++) {
+      for (let j = i + 1; j < a.length; j++) {
+        if(a[i] > a[j]){
+          [a[i], a[j]] = [a[j], a[i]]
+        }
+      }
+    }
+  }
+  // 快速排序
+  function QuickSortNew(a){
+  }
