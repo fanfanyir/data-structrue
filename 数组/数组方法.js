@@ -58,3 +58,13 @@ var a = [100, 20, 40, 30, 1, 5, 9, 2, 20, 20, 30, 2];
   // 快速排序
   function QuickSortNew(a){
   }
+
+
+  // 四、迭代器方法：对数组中的每个元素应用一个函数，可以返回一个值、一组值或者一个新数组。
+// 1. 不生成新数组：forEach()  every()/some()  reduce()
+function isEven(num) {
+  return num % 2 == 0;
+}
+var everyNums = [2,4,6,8,10];
+console.log(everyNums.every(isEven)); // true
+// 2. 生成新数组： map() filter()  返回一个新数组
