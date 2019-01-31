@@ -10,3 +10,11 @@ Array.martix = function(numrows, numcols, initial) {
   }
   return arr;
 }
+
+// 测试代码
+var nums = Array.martix(5,5,0);
+console.log(nums);
+console.log(nums[1][1]);
+var names = Array.martix(3,3,"");
+names[1][2] = "Joe";
+console.log(names[1][2]);
