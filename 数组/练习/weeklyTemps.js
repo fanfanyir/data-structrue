@@ -24,7 +24,7 @@ function monAverage (mon) {
   return total/this.dataStore[mon].length;
 }
 
-function allWeeksAverage () {
+function allAverage () {
   var total = 0;
   for(var i = 0;i< this.dataStore.length;i++){
     total += this.monAverage[i];
