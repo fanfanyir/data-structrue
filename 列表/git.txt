@@ -1,0 +1,14 @@
+git pull origin master --allow-unrelated-histories
+
+后面加上 --allow-unrelated-histories ， 把两段不相干的 分支进行强行合并
+
+
+git branch --set-upstream-to=origin/remote_branch  your_branch   分支关联
+
+
+
+http://touch.piao.qunar.com/touch/detail.htm?id=2170434762&from=as_recommend_sight
+
+淘宝镜像
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+cnpm install node-sass
