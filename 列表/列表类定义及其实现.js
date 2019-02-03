@@ -134,3 +134,31 @@ function getElement() {
   return this.dataStore[this.pos];
 }
 
+var names = new List();
+names.append("zhang");
+names.append("wu");
+names.append("xu");
+names.append("chen");
+names.append("wang");
+// names.front();
+// console.log(names.getElement());
+// names.next();
+// names.next();
+// names.prev();
+// console.log(names.getElement());
+
+
+// 使用迭代器访问列表： 比如 front() end() prev() next() 和 currPos 就实现了 cList 类的一个迭代器
+// 和使用数组索引相比使用迭代器的优点：
+// 1. 访问列表元素时不必关心底层的数据存储结构
+// 2. 当为列表添加一个元素时，索引的值就不对了，此时只用更新列表而不用更新迭代器
+// 3. 可以用不同类型的数据存储方式实现 cList 类，迭代器为访问列表里的元素提供了一种统一的方式
+
+// 迭代器遍历列表：
+// for(names.front(); names.currPos() < names.length(); names.next()) {
+//   console.log(names.currPos());
+//   console.log(names.getElement());
+// }
+// for(names.end(); names.currPos() >= 0; names.prev()) {
+//   console.log(names.getElement());
+// }
